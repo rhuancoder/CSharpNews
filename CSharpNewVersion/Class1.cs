@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NUnit.Framework;
+using System;
 
 namespace CSharpNewVersion
 {
@@ -8,6 +9,7 @@ namespace CSharpNewVersion
         string Name { get; set; }
         DateTime BirthDate { get; set; }
 
+        // implementing method, right in the interface
         int GetAge()
         {
             return DateTime.Now.Year - BirthDate.Year;
@@ -28,8 +30,20 @@ namespace CSharpNewVersion
         public DateTime BirthDate { get; set; }
     }
 
-
+    [TestFixture]
     class Class1
     {
+        [Test]
+        public void Class1Test()
+        {
+            IPerson person = new Customer
+            {
+                BirthDate = Convert.ToDateTime("01/01/1990")
+            };
+
+            var years = DateTime.Now.Year - person.BirthDate.Year;
+
+            Assert.That(years, Is.EqualTo(person.GetAge()));
+        }
     }
 }
