@@ -36,7 +36,7 @@ namespace CSharpNewVersion
     }
 
 
-    class Class1
+    class InterfaceMethod
     {
     }
 }

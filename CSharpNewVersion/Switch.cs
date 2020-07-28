@@ -14,7 +14,7 @@ namespace CSharpNewVersion
         Red
     }
 
-    class Class2
+    class Switch
     {
         Color GetColor(MyColor myColor) =>
             myColor switch 

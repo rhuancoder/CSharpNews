@@ -31,7 +31,7 @@ namespace CSharpNewVersion
     }
 
     [TestFixture]
-    class Class1
+    class InterfaceMethod
     {
         [Test]
         public void Class1Test()

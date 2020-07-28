@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Text;
 
 namespace CSharpNewVersion
 {
@@ -13,7 +11,7 @@ namespace CSharpNewVersion
         Red
     }
 
-    class Class2
+    class Switch
     {
         Color GetColor(MyColor myColor) 
         {
