@@ -40,7 +40,7 @@ namespace CSharpNewVersion
         } //is disposed
 
         [Test]
-        public void Class3Test()
+        public void UsingTest()
         {
             WriteLines(new string[]
             {

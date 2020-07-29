@@ -25,7 +25,7 @@ namespace CSharpNewVersion
             };
 
         [Test]
-        public void Class2Test()
+        public void SwitchTest()
         {
             var selectedColor = GetColor(MyColor.Blue);
 

@@ -34,7 +34,7 @@ namespace CSharpNewVersion
     class InterfaceMethod
     {
         [Test]
-        public void Class1Test()
+        public void InterfaceMethodTest()
         {
             IPerson person = new Customer
             {
